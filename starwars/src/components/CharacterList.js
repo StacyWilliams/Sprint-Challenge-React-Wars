@@ -1,9 +1,22 @@
-import React from 'react';
+import React from 'react'
+import Character from './Character'
 
-const CharacterList = () => {
-    return(
-        
-    )
-}
+const CharacterList = props => {
+    return (
 
-export default CharacterList;
+        <div className={"list-container"}>
+          {props.starwarsChars.map((char, i) => {
+            return (
+                  <div>
+                <Character starwarsChars={props.starwarsChars} index={i} />
+                </div>
+
+
+            );
+          })}
+        </div>
+
+    );
+  };
+
+  export default CharacterList;
