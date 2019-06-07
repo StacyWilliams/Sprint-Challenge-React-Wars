@@ -31,7 +31,8 @@ getCharacters = URL => {
 render() {
   return (
     <div className="container">
-      <h1 className="header">React Wars</h1>
+      <h1 className="header">React Wars Choose Wisely</h1>
+      <h2 className="header">Fear is the path to the Dark Sidee</h2>
       <CharacterList starwarsChars ={this.state.starwarsChars} />
     </div>
   );
