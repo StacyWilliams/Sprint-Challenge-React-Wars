@@ -1,36 +1,42 @@
 
 .container{
   
-  font-family: cursive;
+  font-family: 'Star Jedi', Arial;
+  text-shadow: 2px 2px 2px slategray;
   font-weight: bold;
   display: flex;
   flex-direction: column;
  
-  justify-content: center;
-  align-items: space-around;
-  /* border: 2px solid black; */
-  margin: 0 5px;
+   justify-content: center;
+  align-items: space-around; 
+ 
 }
 .list-container{
-  background-color: transparent;
+  /* background-color: transparent; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: space-around;
-  /* border: 2px solid black; */
   margin: 10px;
   
 }
 
-.character-container{
-  background-color: rgb(204, 162, 107);
-  display:flex;
+/* .characters{
+  display: flex;
   flex-direction: row;
+} */
+
+.character-container{
+  /* width:20%;
+  height: 25%; */
+  background-color: rgb(204, 162, 107);
+  /* display:flex;
+  flex-direction: row; */
   justify-content:center; 
   align-items: space-between;
   border: 2px solid black;
   margin: 10px;
-  box-shadow: 5px 10px;
+  box-shadow: 5px 5px;
 }
 .header {
   display: flex;

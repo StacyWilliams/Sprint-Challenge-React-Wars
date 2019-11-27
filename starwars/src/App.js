@@ -21,6 +21,7 @@ getCharacters = URL => {
       return res.json();
     })
     .then(data => {
+      console.log(data)
       this.setState({ starwarsChars: data.results });
     })
     .catch(err => {
@@ -32,8 +33,9 @@ render() {
   return (
     <div className="container">
       <h1 className="header">React Wars Choose Wisely</h1>
+         <CharacterList starwarsChars ={this.state.starwarsChars} />
       <h2 className="header">Fear is the path to the Dark Sidee</h2>
-      <CharacterList starwarsChars ={this.state.starwarsChars} />
+      
     </div>
   );
 };
